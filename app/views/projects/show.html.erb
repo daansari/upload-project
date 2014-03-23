@@ -1,0 +1,21 @@
+<br><br>
+<%= link_to "Back", projects_path, :class => "button round" %>
+
+<h2>Detail</h2>
+<table class="custom-table">
+	<thead>
+		<th>Name</th>
+		<th>Modify</th>
+	</thead>
+
+	<tbody>
+		<tr>
+			<td><%= @project.name %></td>
+			<td>
+				<%= link_to "Edit", edit_project_path(@project) %>
+				<br>
+				<%= link_to("Delete", project_path(@project), :data => { :confirm => "Are you sure?" }, :method => :delete) %>
+			</td>
+		</tr>
+	</tbody>
+</table>

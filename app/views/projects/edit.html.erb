@@ -1,0 +1,18 @@
+<div class="authform">
+  <h2>Edit <%= @project.name %></h2>
+   
+  <%= simple_form_for @project, url: project_path(@project), :html => { :method => :put } do |f| %>
+    <%= f.error_notification %>
+
+    <div class="form-inputs">
+      <%= f.input :name, :required => true, :autofocus => true %>
+      
+
+      <div class="form-actions">
+        <%= f.button :submit, "Update" %>
+      </div>
+    </div>
+
+    <%= link_to "Back", project_path(@project) %>
+  <% end %>
+</div>

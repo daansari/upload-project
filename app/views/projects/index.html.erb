@@ -1,0 +1,27 @@
+<h2>Projects:</h2>
+<!-- <i class="fi-plus"></i> -->
+
+<table class="custom-table">
+	<thead>
+		<th>Name</th>
+		<th>updated_at</th>
+		<th>Modify</th>
+	</thead>
+
+	<tbody>
+		<% @projects.each do |project| %>
+			<tr>
+				<td><%= project.name %></td>
+				<td><%= project.updated_at %></td>
+				
+				<td>
+					<%= link_to "Show", project_path(project) %>
+					<br>
+					<%= link_to "Edit", edit_project_path(project) %>
+					<br>
+					<%= link_to("Delete", project_path(project), :data => { :confirm => "Are you sure?" }, :method => :delete) %>
+				</td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

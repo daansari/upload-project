@@ -11,6 +11,11 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
+//= require foundation
 //= require turbolinks
+//= require browser_timezone_rails/application.js
 //= require_tree .
+
+$(function(){ $(document).foundation(); });
