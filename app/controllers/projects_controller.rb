@@ -4,7 +4,7 @@ class ProjectsController < ApplicationController
 	end
 
 	def index
-		@projects = Project.all
+		@projects = Project.all.order("created_at ASC")
 	end
 
 	def create

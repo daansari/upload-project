@@ -4,12 +4,14 @@
 <h2>Detail</h2>
 <table class="custom-table">
 	<thead>
+		<td>Image</td>
 		<th>Name</th>
 		<th>Modify</th>
 	</thead>
 
 	<tbody>
 		<tr>
+			<td><%= image_tag @project.attachment_url(:small).to_s %></td>
 			<td><%= @project.name %></td>
 			<td>
 				<%= link_to "Edit", edit_project_path(@project) %>
