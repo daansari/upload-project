@@ -6,7 +6,11 @@
 
     <div class="form-inputs">
       <%= f.input :name, :required => true, :autofocus => true %>
-      
+      <%= image_tag(@project.attachment_url(:thumb).to_s) if @project.attachment? %>
+      <%= f.file_field :attachment %>
+      <%= f.hidden_field :attachment_cache %>
+
+      <%= f.input :remove_attachment_file, as: :boolean, label: "Remove attachment" if @project.attachment? %>
 
       <div class="form-actions">
         <%= f.button :submit, "Update" %>

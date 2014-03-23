@@ -43,6 +43,6 @@ class ProjectsController < ApplicationController
 	end
 private
   def post_params
-    params.require(:project).permit(:name)
+    params.require(:project).permit(:name, :attachment, :remove_attachment_file, :attachment_cache)
   end
 end

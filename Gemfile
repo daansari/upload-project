@@ -11,7 +11,10 @@ gem 'simple_form'
 
 gem 'foundation-rails'
 gem 'foundation-icons-sass-rails'
-gem 'paperclip'
+# gem 'paperclip'
+
+gem 'carrierwave'
+gem 'rmagick', :require => false
 
 
 gem 'compass-rails', '>= 1.1.2'

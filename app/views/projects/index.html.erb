@@ -1,8 +1,13 @@
 <h2>Projects:</h2>
 <!-- <i class="fi-plus"></i> -->
+<%= link_to new_project_path, :class => 'add-button' do %>
+	<i class="fi-plus"></i>Add Project
+<% end %>
+
 
 <table class="custom-table">
 	<thead>
+		<th>Image</th>
 		<th>Name</th>
 		<th>updated_at</th>
 		<th>Modify</th>
@@ -11,6 +16,7 @@
 	<tbody>
 		<% @projects.each do |project| %>
 			<tr>
+				<td><%= image_tag project.attachment_url(:small).to_s %></td>
 				<td><%= project.name %></td>
 				<td><%= project.updated_at %></td>
 				
