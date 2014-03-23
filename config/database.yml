@@ -19,7 +19,7 @@ development:
   encoding: unicode
   database: Upload-Project_development
   pool: 5
-  username: Upload-Project
+  username: 
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -48,13 +48,15 @@ test:
   encoding: unicode
   database: Upload-Project_test
   pool: 5
-  username: Upload-Project
+  username: 
   password:
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: Upload-Project_production
   pool: 5
-  username: Upload-Project
-  password:
+  database: d2u7fe6j4kq0qn
+  username: aifkhcvhtcwodc
+  password: kQQM6z80tdjl7bpfOkEKnhCPpr
+  host: ec2-54-235-117-198.compute-1.amazonaws.com
+  port: 5432
