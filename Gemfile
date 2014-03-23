@@ -15,7 +15,7 @@ gem 'foundation-icons-sass-rails'
 
 gem 'carrierwave'
 gem 'rmagick', :require => false
-
+gem "jquery-fileupload-rails"
 
 gem 'compass-rails', '>= 1.1.2'
 
