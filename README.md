@@ -1,28 +1,14 @@
-== README
+== UPLOAD PROJECT
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails project to upload images and videos via carrierwave and integrate it with an iOS app, where in the app can upload images and videos to a server
 
-Things you may want to cover:
+This project will eventually cover:
 
-* Ruby version
+* Upload Images/Videos via Carrierwave, jQuery File Upload, Fog
 
-* System dependencies
+* Save images/videos on local server / S3
 
-* Configuration
+* A companion iOS App Repo which will have the functionality of interacting with the server
 
-* Database creation
+* The iOS App will be able to upload images/videos to the server.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
